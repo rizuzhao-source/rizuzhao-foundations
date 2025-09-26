@@ -16,6 +16,7 @@ library(readr)
 # Will prompt to open a browser and log into Google (first time only)
 gs4_auth()
 
+
 # ---- Step 2: Define Sheet URL ----
 # Replace this with the actual URL of the private shared Google Sheet
 sheet_url = "https://docs.google.com/spreadsheets/d/1k_4SZ-6achILnMD-tHU1PdrM7ppQgizJtyV4gf0b1wk/edit?usp=sharing"
