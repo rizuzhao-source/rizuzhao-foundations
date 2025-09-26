@@ -1,37 +1,22 @@
 #!/bin/bash
 
-# dependencies.sh
+# Dependencies setup script for rizuzhao-foundations project
+# This script sets up environment variables and paths needed for the project
 
-# Installs all R and Python dependencies for this repository
-# Run this script from the project root: bash setup/dependencies.sh
+echo "🔧 Setting up project dependencies..."
 
-# --- SYSTEM DEPENDENCIES ---
-# Python and R must be installed manually on Windows.
-# Download Python: https://www.python.org/downloads/
-# Download R: https://cran.r-project.org/bin/windows/base/
-# (Recommended: Python 3.12, R 4.4.1)
+# Add LM Studio to PATH
+export PATH="$PATH:/Users/ginayp/.lmstudio/bin"
+echo "✅ Added LM Studio to PATH: /Users/ginayp/.lmstudio/bin"
 
-# --- PYTHON DEPENDENCIES ---
-# Ensure python is available
-python --version || echo "⚠️ Python not found. Please install Python manually."
-
-
-# --- PIP INSTALLATION (if missing) ---
-# Try to install pip if not found
-if ! command -v pip &> /dev/null; then
-  echo "⚠️ pip not found. Attempting to install pip..."
-  # Download get-pip.py
-  curl -O https://bootstrap.pypa.io/get-pip.py
-  # Try to use python to install pip
-  python get-pip.py
-  # Clean up
-  rm get-pip.py
-  # Re-check pip
-  pip --version || echo "❌ pip installation failed. Please install pip manually: https://pip.pypa.io/en/stable/installation/"
+# Verify LM Studio is accessible
+if command -v lms &> /dev/null; then
+    echo "✅ LM Studio (lms) command is available"
 else
-  echo "✅ pip is already installed."
+    echo "⚠️  LM Studio (lms) command not found - please check installation"
 fi
 
+<<<<<<< HEAD
 # Ensure pip is available
 pip --version || echo "⚠️ pip not found. Please ensure pip is installed."
 
@@ -50,3 +35,7 @@ R -q -e 'install.packages(c(
 
 # --- DONE ---
 echo "✅ All dependencies installation commands have been run. If you see errors above, please install Python and R manually first."
+=======
+echo "🎉 Dependencies setup complete!"
+
+>>>>>>> ab888b2 (Resolve merge conflict in responses.csv: keep both local and upstream rows)

@@ -1,0 +1,37 @@
+{
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/bin/zsh",
+            "args": ["-l"],
+            "icon": "terminal"
+        },
+        "bash": {
+            "path": "/bin/bash",
+            "args": ["-l"],
+            "icon": "terminal-bash"
+        },
+        "R": {
+            "path": "/usr/local/bin/R",
+            "args": ["--interactive"],
+            "icon": "r-lang"
+        },
+        "Rscript": {
+            "path": "/usr/local/bin/Rscript",
+            "args": ["-i"],
+            "icon": "r-lang"
+        },
+        "Python": {
+            "path": "/opt/anaconda3/bin/python",
+            "args": ["-i"],
+            "icon": "python"
+        },
+        "Python3": {
+            "path": "/opt/anaconda3/bin/python3",
+            "args": ["-i"],
+            "icon": "python"
+        }
+    },
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.shellArgs.osx": ["-l"]
+}
