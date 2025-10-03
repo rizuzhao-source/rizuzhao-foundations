@@ -28,9 +28,9 @@
 # CURRENT MACOS ENVIRONMENT SETTINGS (ginayp user)
 # =============================================================================
 
-# Add LM Studio to PATH for this project (macOS - ginayp user)
-export PATH="$PATH:/Users/<username>/.lmstudio/bin"
-alias lms='/Users/<username>/.lmstudio/bin/lms'
+# Add LM Studio to PATH for this project (macOS)
+export PATH="$PATH:/Users/zhaorizu/.lmstudio/bin"
+alias lms='/Users/zhaorizu/.lmstudio/bin/lms'
 
 # Add R to your Path for this project (macOS - ginayp user)
 # R is typically installed via Homebrew or CRAN on macOS
