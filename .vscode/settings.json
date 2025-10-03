@@ -33,5 +33,13 @@
         }
     },
     "terminal.integrated.shell.osx": "/bin/zsh",
-    "terminal.integrated.shellArgs.osx": ["-l"]
+    "terminal.integrated.shellArgs.osx": ["-l"],
+    "r.rterm.mac": "/usr/local/bin/R",
+    "r.rpath.mac": "/usr/local/bin/R",
+    "r.alwaysUseActiveTerminal": true,
+    "code-runner.executorMap": {
+        "r": "Rscript"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true
 }

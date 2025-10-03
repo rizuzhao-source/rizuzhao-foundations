@@ -1,0 +1,20 @@
+{
+  // Run current R file via Rscript
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Active R File",
+      "type": "shell",
+      "command": "/usr/local/bin/Rscript",
+      "args": [
+        "${file}"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
+
+

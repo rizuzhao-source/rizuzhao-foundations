@@ -66,7 +66,7 @@ AGE_VARS = [
 
 
 def require_api_key() -> str:
-    api_key = os.getenv("CENSUS_API_KEY")
+    api_key = "0fb71de491e7f716a8e2edfeb66afe81d6925f73"
     if not api_key:
         sys.stderr.write("CENSUS_API_KEY environment variable is not set.\n")
         sys.stderr.write("Export it first, e.g.: export CENSUS_API_KEY=\"your_key\"\n")

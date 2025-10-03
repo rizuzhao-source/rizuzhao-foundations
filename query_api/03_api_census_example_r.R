@@ -5,7 +5,7 @@ library(tidycensus)
 
 # Set Census API Key (only required once)
 # Request Census API Key at https://api.census.gov/data/key_signup.html
-census_api_key("Your_Census_API_Key", install = TRUE, overwrite = TRUE)
+census_api_key("0fb71de491e7f716a8e2edfeb66afe81d6925f73", install = TRUE, overwrite = TRUE)
 
 # Define variables for census data retrieval
 variables <- c(
